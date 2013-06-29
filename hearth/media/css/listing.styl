@@ -14,6 +14,10 @@ $triangle-size = 20px;
     }
     .icon {
         display: block;
+        transform: scale(1);
+        transition-property: transform;
+        transition-function: ease-in;
+        transition-duration: 0.3s;
     }
     .info h3,
     .author {
@@ -247,6 +251,10 @@ grid-style() {
         }
         &:active .icon {
             opacity: .4;
+            transform: scale(0.8);
+            transition-property: transform;
+            transition-function: ease-in;
+            transition-duration: 0.2s;
         }
         h3, .vital {
             font-size: 12px;
